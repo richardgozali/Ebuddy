@@ -10,12 +10,17 @@ import SwiftUI
 @main
 struct rentbabeApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
-    @StateObject private var userManager = UserManager() 
+    @State private var userManager = UserManager()
+    @State var destinationCoordinator: String? = MainScreenCoordinator.name
 
     var body: some Scene {
         WindowGroup {
-            MainScreenView(userManager: self.userManager)
-                .environmentObject(userManager)
+            NavigationView{
+                MainScreenCoordinator(
+                    userManager: $userManager,
+                    selectedCoordinatorName: $destinationCoordinator
+                )
+            }
         }
     }
 }

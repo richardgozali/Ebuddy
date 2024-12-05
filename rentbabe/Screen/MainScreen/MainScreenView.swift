@@ -8,17 +8,13 @@
 import SwiftUI
 
 struct MainScreenView: View {
-    @EnvironmentObject var userManager: UserManager
-    @StateObject private var viewModel: MainScreenViewModel
-
-    init(userManager: UserManager) {
-        _viewModel = StateObject(wrappedValue: MainScreenViewModel(userManager: userManager))
-    }
+    @ObservedObject var viewModel: MainScreenViewModel
     
     var body: some View {
         VStack {
+            viewModel.onCreateNavigationLinks()
             ProfileView(viewModel: viewModel.profileViewModel)
                 .padding(.horizontal, 16)
-        }
+        }.navigationBarHidden(true)
     }
 }

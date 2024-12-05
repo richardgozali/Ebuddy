@@ -8,16 +8,17 @@
 import Combine
 import Foundation
 import FirebaseFirestore
+import SwiftUI
 
 class MainScreenViewModel: ObservableObject {
     @Published var users: [User] = []
     @Published var errorMessage: String? = nil
     @Published var profileViewModel = ProfileViewModel()
-    @Published var userManager: UserManager
     private var cancellables = Set<AnyCancellable>()
+    private(set) var useCase = MainScreenUseCase()
+    var onCreateNavigationLinks: () -> AnyView = { AnyView( EmptyView() ) }
 
-    init(userManager: UserManager) {
-        self.userManager = userManager
+    init() {
         self.profileViewModel.action = uploadTask
         fetchUsers()
     }
@@ -56,7 +57,7 @@ class MainScreenViewModel: ObservableObject {
             image: imageBase64 ?? ""
         ) { success, error in
             if success {
-                self.userManager.setupUser(
+                self.useCase.updateTask(
                     User(
                         uuid: self.profileViewModel.uid,
                         email: self.profileViewModel.email,
@@ -70,5 +71,9 @@ class MainScreenViewModel: ObservableObject {
             }
             self.profileViewModel.setLoading(false)
         }
+    }
+
+    func setUseCase(_ useCase: MainScreenUseCase) {
+        self.useCase = useCase
     }
 }
