@@ -10,9 +10,12 @@ import SwiftUI
 @main
 struct rentbabeApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    @StateObject private var userManager = UserManager() 
+
     var body: some Scene {
         WindowGroup {
-            MainScreenView()
+            MainScreenView(userManager: self.userManager)
+                .environmentObject(userManager)
         }
     }
 }

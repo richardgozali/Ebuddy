@@ -25,7 +25,7 @@ struct ProfileView: View {
 
     private func formView() -> some View {
         VStack {
-            TextField("UID", text: $viewModel.uid)
+            TextField("UID", text: $viewModel.uid).disabled(!viewModel.uid.isEmpty)
             TextField("Email",text: $viewModel.email)
             TextField("Phone Number",text: $viewModel.phoneNumber)
         }
@@ -33,15 +33,21 @@ struct ProfileView: View {
     }
 
     private func primaryButton() -> some View  {
-        Button(action: viewModel.uploadTask) {
-            Text("Upload Data")
-                .frame(maxWidth: .infinity)
-                .foregroundColor(.white)
-                .padding()
-                .background(Color.blue)
-                .cornerRadius(10)
-                .frame(maxWidth: .infinity)
+        Button(action: viewModel.action) {
+            if viewModel.isLoading {
+                ProgressView()
+                    .progressViewStyle(CircularProgressViewStyle())
+                    .padding()
+            } else {
+                Text("Upload Data")
+                    .padding()
+            }
         }
+        .frame(maxWidth: .infinity)
+        .foregroundColor(.white)
+        .background(Color.blue)
+        .cornerRadius(10)
+        .disabled(viewModel.isLoading)
     }
 
     var body: some View {

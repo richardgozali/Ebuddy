@@ -8,8 +8,13 @@
 import SwiftUI
 
 struct MainScreenView: View {
-    @StateObject private var viewModel = MainScreenViewModel()
+    @EnvironmentObject var userManager: UserManager
+    @StateObject private var viewModel: MainScreenViewModel
 
+    init(userManager: UserManager) {
+        _viewModel = StateObject(wrappedValue: MainScreenViewModel(userManager: userManager))
+    }
+    
     var body: some View {
         VStack {
             ProfileView(viewModel: viewModel.profileViewModel)
