@@ -12,7 +12,13 @@ enum Gender: String {
 }
 
 extension Gender {
-    func valueToGender(_ value: String = "") -> Gender {
-        return Gender(rawValue: value) ?? .UNSPECIFIED
+    private var titles: [Gender: String] {[
+        .UNSPECIFIED: "",
+        .MALE: "Male",
+        .FEMALE: "Female",
+    ]}
+
+    var title: String{
+        titles[self] ?? ""
     }
 }

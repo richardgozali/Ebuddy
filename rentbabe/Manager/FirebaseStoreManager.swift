@@ -24,8 +24,11 @@ class FirebaseStoreManager {
                         let data = doc.data()
                         return User(
                             uuid: doc.documentID,
+                            email: data["email"] as? String ?? "",
                             gender: Gender(rawValue: data["ge"] as? String ?? "")
-                            ?? .UNSPECIFIED
+                            ?? .UNSPECIFIED,
+                            phoneNumber: data["phoneNumber"] as? String ?? "",
+                            image: data["image"] as? String ?? ""
                         )
                     }
                     promise(.success(users))
@@ -33,5 +36,28 @@ class FirebaseStoreManager {
             }
         }
         .eraseToAnyPublisher()
+    }
+
+    func updateUserData(
+        userID: String,
+        email: String,
+        phoneNumber: String,
+        gender: String,
+        image: String,
+        completion: @escaping (Bool, Error?
+    ) -> Void) {
+        let userRef = db.collection("USERS").document(userID)
+        userRef.updateData([
+            "email": email,
+            "phoneNumber": phoneNumber,
+            "gender": gender,
+            "image": image
+        ]) { error in
+            if let error = error {
+                completion(false, error)
+            } else {
+                completion(true, nil)
+            }
+        }
     }
 }

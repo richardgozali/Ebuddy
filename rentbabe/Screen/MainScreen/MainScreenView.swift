@@ -12,10 +12,8 @@ struct MainScreenView: View {
 
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            ProfileView(viewModel: viewModel.profileViewModel)
+                .padding(.horizontal, 16)
         }
     }
 }

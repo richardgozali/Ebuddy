@@ -12,6 +12,7 @@ import FirebaseFirestore
 class MainScreenViewModel: ObservableObject {
     @Published var users: [User] = []
     @Published var errorMessage: String? = nil
+    @Published var profileViewModel = ProfileViewModel()
     private var cancellables = Set<AnyCancellable>()
 
     init() {
@@ -27,6 +28,13 @@ class MainScreenViewModel: ObservableObject {
                 }
             }, receiveValue: { [weak self] users in
                 self?.users = users
+                self?.profileViewModel.email = users.first?.email ?? ""
+                self?.profileViewModel.phoneNumber = users.first?.phoneNumber ?? ""
+                self?.profileViewModel.gender = users.first?.gender ?? Gender.UNSPECIFIED
+                self?.profileViewModel.uid = users.first?.uuid ?? ""
+                self?.profileViewModel.image = Base64.instance.decodeBase64ToImage(
+                    base64String: users.first?.image ?? ""
+                ) ?? UIImage(systemName: "person.fill") ?? UIImage()
             })
             .store(in: &cancellables)
     }
