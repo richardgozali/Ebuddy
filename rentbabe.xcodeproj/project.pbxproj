@@ -7,19 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CBED68257340B51D98980038 /* Pods_rentbabe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD4DC1749F5A2DFDEBA9F0B6 /* Pods_rentbabe.framework */; };
+		D883F6ABD73600885EFB5BB3 /* Pods_rentbabe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F8066E536FA4597433D1CF /* Pods_rentbabe.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		170EA066EFB3540699137CA2 /* Pods-rentbabe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rentbabe.debug.xcconfig"; path = "Target Support Files/Pods-rentbabe/Pods-rentbabe.debug.xcconfig"; sourceTree = "<group>"; };
+		319E1F7E1C68ECB408879A79 /* Pods-rentbabe.prod release .xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rentbabe.prod release .xcconfig"; path = "Target Support Files/Pods-rentbabe/Pods-rentbabe.prod release .xcconfig"; sourceTree = "<group>"; };
+		48F8066E536FA4597433D1CF /* Pods_rentbabe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rentbabe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		614B95862CFEFAE3006A1A8E /* rentbabe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rentbabe.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		BACF174E767DF981AEBE899E /* Pods-rentbabe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rentbabe.release.xcconfig"; path = "Target Support Files/Pods-rentbabe/Pods-rentbabe.release.xcconfig"; sourceTree = "<group>"; };
-		BD4DC1749F5A2DFDEBA9F0B6 /* Pods_rentbabe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rentbabe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68C134F1D860072A04F6264C /* Pods-rentbabe.prod debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rentbabe.prod debug.xcconfig"; path = "Target Support Files/Pods-rentbabe/Pods-rentbabe.prod debug.xcconfig"; sourceTree = "<group>"; };
+		D5E68C87E8A55C689D01F33A /* Pods-rentbabe.dev release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rentbabe.dev release.xcconfig"; path = "Target Support Files/Pods-rentbabe/Pods-rentbabe.dev release.xcconfig"; sourceTree = "<group>"; };
+		EBB8E5552C13B2189ECC337D /* Pods-rentbabe.dev debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rentbabe.dev debug.xcconfig"; path = "Target Support Files/Pods-rentbabe/Pods-rentbabe.dev debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		614B95882CFEFAE3006A1A8E /* rentbabe */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = rentbabe;
 			sourceTree = "<group>";
 		};
@@ -30,7 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBED68257340B51D98980038 /* Pods_rentbabe.framework in Frameworks */,
+				D883F6ABD73600885EFB5BB3 /* Pods_rentbabe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +44,10 @@
 		334CC357A257FEB90E3525D0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				170EA066EFB3540699137CA2 /* Pods-rentbabe.debug.xcconfig */,
-				BACF174E767DF981AEBE899E /* Pods-rentbabe.release.xcconfig */,
+				EBB8E5552C13B2189ECC337D /* Pods-rentbabe.dev debug.xcconfig */,
+				68C134F1D860072A04F6264C /* Pods-rentbabe.prod debug.xcconfig */,
+				D5E68C87E8A55C689D01F33A /* Pods-rentbabe.dev release.xcconfig */,
+				319E1F7E1C68ECB408879A79 /* Pods-rentbabe.prod release .xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -52,7 +58,7 @@
 				614B95882CFEFAE3006A1A8E /* rentbabe */,
 				614B95872CFEFAE3006A1A8E /* Products */,
 				334CC357A257FEB90E3525D0 /* Pods */,
-				B4914AB65FD0BC5F83FD5279 /* Frameworks */,
+				9B88B217D9A758CC27508C5A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,10 +70,10 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B4914AB65FD0BC5F83FD5279 /* Frameworks */ = {
+		9B88B217D9A758CC27508C5A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BD4DC1749F5A2DFDEBA9F0B6 /* Pods_rentbabe.framework */,
+				48F8066E536FA4597433D1CF /* Pods_rentbabe.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -79,11 +85,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 614B95942CFEFAE5006A1A8E /* Build configuration list for PBXNativeTarget "rentbabe" */;
 			buildPhases = (
-				F00C17979214156FB86422EF /* [CP] Check Pods Manifest.lock */,
+				94C480BAD9B9640493D6C25D /* [CP] Check Pods Manifest.lock */,
 				614B95822CFEFAE3006A1A8E /* Sources */,
 				614B95832CFEFAE3006A1A8E /* Frameworks */,
 				614B95842CFEFAE3006A1A8E /* Resources */,
-				101DDBBD336D9AD3DBCD910B /* [CP] Embed Pods Frameworks */,
+				D678C49FC2318D377AC711AF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -142,24 +148,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		101DDBBD336D9AD3DBCD910B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-rentbabe/Pods-rentbabe-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-rentbabe/Pods-rentbabe-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rentbabe/Pods-rentbabe-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F00C17979214156FB86422EF /* [CP] Check Pods Manifest.lock */ = {
+		94C480BAD9B9640493D6C25D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -181,6 +170,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D678C49FC2318D377AC711AF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-rentbabe/Pods-rentbabe-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-rentbabe/Pods-rentbabe-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rentbabe/Pods-rentbabe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -194,10 +200,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		614B95922CFEFAE5006A1A8E /* Debug */ = {
+		614B95922CFEFAE5006A1A8E /* Dev Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				APP_NAME = Develop;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -255,12 +262,13 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
-			name = Debug;
+			name = "Dev Debug";
 		};
-		614B95932CFEFAE5006A1A8E /* Release */ = {
+		614B95932CFEFAE5006A1A8E /* Dev Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				APP_NAME = Develop;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -311,11 +319,11 @@
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = "Dev Release";
 		};
-		614B95952CFEFAE5006A1A8E /* Debug */ = {
+		614B95952CFEFAE5006A1A8E /* Dev Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 170EA066EFB3540699137CA2 /* Pods-rentbabe.debug.xcconfig */;
+			baseConfigurationReference = EBB8E5552C13B2189ECC337D /* Pods-rentbabe.dev debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -324,6 +332,7 @@
 				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "$(APP_NAME)";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -340,11 +349,11 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = Debug;
+			name = "Dev Debug";
 		};
-		614B95962CFEFAE5006A1A8E /* Release */ = {
+		614B95962CFEFAE5006A1A8E /* Dev Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BACF174E767DF981AEBE899E /* Pods-rentbabe.release.xcconfig */;
+			baseConfigurationReference = D5E68C87E8A55C689D01F33A /* Pods-rentbabe.dev release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -353,6 +362,7 @@
 				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "$(APP_NAME)";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -369,7 +379,188 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = Release;
+			name = "Dev Release";
+		};
+		6151413F2D0171C200A52C8C /* Prod Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APP_NAME = Production;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Prod Debug";
+		};
+		615141402D0171C200A52C8C /* Prod Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68C134F1D860072A04F6264C /* Pods-rentbabe.prod debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "$(APP_NAME)";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = richard.gozali.rentbabe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Prod Debug";
+		};
+		615141412D0171C700A52C8C /* Prod Release  */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APP_NAME = Production;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Prod Release ";
+		};
+		615141422D0171C700A52C8C /* Prod Release  */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 319E1F7E1C68ECB408879A79 /* Pods-rentbabe.prod release .xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "$(APP_NAME)";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = richard.gozali.rentbabe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Prod Release ";
 		};
 /* End XCBuildConfiguration section */
 
@@ -377,20 +568,24 @@
 		614B95812CFEFAE3006A1A8E /* Build configuration list for PBXProject "rentbabe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				614B95922CFEFAE5006A1A8E /* Debug */,
-				614B95932CFEFAE5006A1A8E /* Release */,
+				614B95922CFEFAE5006A1A8E /* Dev Debug */,
+				6151413F2D0171C200A52C8C /* Prod Debug */,
+				614B95932CFEFAE5006A1A8E /* Dev Release */,
+				615141412D0171C700A52C8C /* Prod Release  */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Dev Release";
 		};
 		614B95942CFEFAE5006A1A8E /* Build configuration list for PBXNativeTarget "rentbabe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				614B95952CFEFAE5006A1A8E /* Debug */,
-				614B95962CFEFAE5006A1A8E /* Release */,
+				614B95952CFEFAE5006A1A8E /* Dev Debug */,
+				615141402D0171C200A52C8C /* Prod Debug */,
+				614B95962CFEFAE5006A1A8E /* Dev Release */,
+				615141422D0171C700A52C8C /* Prod Release  */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Dev Release";
 		};
 /* End XCConfigurationList section */
 	};
