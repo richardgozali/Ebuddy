@@ -22,8 +22,6 @@
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		614B95882CFEFAE3006A1A8E /* rentbabe */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = rentbabe;
 			sourceTree = "<group>";
 		};

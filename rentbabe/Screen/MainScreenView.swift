@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct MainScreenView: View {
+    @StateObject private var viewModel = MainScreenViewModel()
+
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -15,6 +17,5 @@ struct MainScreenView: View {
                 .foregroundStyle(.tint)
             Text("Hello, world!")
         }
-        .padding()
     }
 }
